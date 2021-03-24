@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+#warper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#header {
+  background-color: #fcee0b;
+  padding: 10px 30px 10px 30px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #2f3d3c;
+}
+
+#footer {
+  background-color: #fcee0b;
+  text-align: right;
+  padding: 10px 30px 10px 30px;
+}
+
+#footer a {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #2f3d3c;
+}
+
+#main {
+  background-color: #fcee0b;
+  width: 100vw;
+  flex: 1;
+  overflow: auto;
+}
+
+#welcome-section {
+  background-color: #fcee0b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discription-container {
+  /* order: 1; */
+  flex-basis: 50vw;
+  padding: 20px;
+  text-align: center;
+  color: #2f3d3c;
+  /* background-color: green; */
+}
+
+.discription-container h1 {
+  margin-bottom: 50px;
+  font-size: 70px;
+}
+
+.discription-container p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.img-container {
+  /* order: 2; */
+  flex-basis: 50vw;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 80px;
+  /* background-color: purple; */
+  background: url(https://pbs.twimg.com/media/EwLEIdiVEAYkPO9?format=jpg&name=large)
+    no-repeat fixed center;
+  background-size: cover;
+  background-position-x: -250px;
+  box-shadow: -50px 40px #dbd101, 50px 40px #dbd101;
+}
+
+/* #welcome-section img {
+  position: relative;
+  left: 100px;
+  bottom: 50px;
+  box-shadow: -50px 40px black, 50px 40px black;
+} */
+
+#projects {
+  background-color: #fcee0b;
+  /* height: 100vh;
+  width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-tile {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.project-thumbnail {
+  background-color: #dbd101;
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.thumbnail-img {
+  width: 512px;
+  height: auto;
+}
+
+.project-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  margin-left: -100px;
+  background-color: #2f3d3c;
+  color: white;
+}
+
+.project-description h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.project-description p {
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+#contact {
+  background: url(https://pbs.twimg.com/media/ExOHzpXVIAImegQ?format=png&name=large);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+.contact-me {
+  position: relative;
+  top: 32vh;
+}
+
+.contact-me li {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contact-me a {
+  text-decoration: none;
+  color: #2f3d3c;
+}
+
+@media only screen and (max-width: 768px) {
+  #welcome-section {
+    flex-direction: column;
+  }
+
+  .img-container {
+    box-shadow: -50px 80px #dbd101, 50px 80px #dbd101;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 10% bottom 95%;
+  }
+
+  #footer {
+    text-align: center;
+  }
+
+  .discription-container {
+    margin-top: -70px;
+  }
+
+  .project-thumbnail {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .project-tile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-description {
+    width: 80%;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  #contact {
+    background-size: contain;
+  }
+}
